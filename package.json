@@ -1,0 +1,31 @@
+{
+  "name": "leetcode-api",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "author": "Junjie Yang",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.25.1",
+    "@types/node": "^14.11.2",
+    "gts": "^3.1.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "graphql": "^16.6.0",
+    "graphql-request": "^5.0.0",
+    "gts": "^3.1.0",
+    "playwright": "^1.25.1",
+    "websocket": "^1.0.34"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run lint",
+    "start": "cd ./build/src/ && node index.js"
+  }
+}
